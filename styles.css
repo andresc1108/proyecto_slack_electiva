@@ -1,0 +1,87 @@
+/* CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+.navbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+/* Logos */
+.logos {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.logos img {
+    margin: 0 2rem;
+}
+
+/* Mockup Section */
+.mockup {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.features div {
+    width: 30%;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    .features div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
